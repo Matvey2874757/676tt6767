@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "researchtool",
+  "version": "${version}",
+  "name": "Research Tool",
+  "description": "Educational client-side research panel for local Minecraft protocol and anti-cheat observation.",
+  "authors": ["Codex"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.researchtool.ResearchToolMod"
+    ]
+  },
+  "mixins": [
+    "researchtool.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

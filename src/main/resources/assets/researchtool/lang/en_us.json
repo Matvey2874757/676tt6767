@@ -1,0 +1,7 @@
+{
+  "key.researchtool.open_gui": "Open Research Panel",
+  "key.researchtool.toggle_movement": "Toggle Movement Experiment",
+  "message.researchtool.creative_blocked": "Research mode: taking items from creative is disabled.",
+  "message.researchtool.muted": "[Server] You muted %s for 10 min.",
+  "message.researchtool.kicked": "[Server] %s was kicked by an operator."
+}

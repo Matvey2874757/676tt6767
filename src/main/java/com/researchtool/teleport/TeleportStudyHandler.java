@@ -2,7 +2,6 @@ package com.researchtool.teleport;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.sound.PositionedSoundInstance;
-import net.minecraft.network.packet.c2s.play.ChatCommandC2SPacket;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
@@ -18,7 +17,7 @@ public final class TeleportStudyHandler {
     public void sendTeleportRequest(MinecraftClient client, double x, double y, double z) {
         if (client.player == null || client.getNetworkHandler() == null) return;
         String command = "tp %.2f %.2f %.2f".formatted(x, y, z);
-        client.getNetworkHandler().sendPacket(new ChatCommandC2SPacket(command));
+        client.getNetworkHandler().sendChatCommand(command);
         client.player.sendMessage(Text.literal("[ResearchTool] Отправлен запрос телепортации для анализа прав: /" + command), false);
         teleportFx(client);
     }
